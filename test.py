@@ -18,3 +18,6 @@ if __name__ == '__main__':
     app.run()
 
 # error 400 means an issue from client side (postman), 404 server down, and error 500 means an issue from the server side, 200 is successful
+
+# so we do not need to know the function name or which language the funtion is written to integrate it to our program
+# to call a funtion, we route it through http url using GET or POST and this URL is known as API
