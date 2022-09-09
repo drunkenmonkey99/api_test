@@ -14,6 +14,15 @@ def test():
         return jsonify(str(result))
 
 
+@app.route('/xyz/abc', methods=['GET', 'POST'])
+def test1():
+    if request.method == 'POST':
+        a = request.json['num3']
+        b = request.json['num4']
+        result = a + b
+        return jsonify(str(result))
+
+
 if __name__ == '__main__':
     app.run()
 
